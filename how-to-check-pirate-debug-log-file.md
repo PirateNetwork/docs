@@ -21,6 +21,6 @@ tail -f debug.log
 ### Windows
 1. Goto `%AppData%\Komodo\PIRATE`
 2. Right-click on empty place and start Windows PowerShell from that folder
-3. Type `get-content debug.log -wait`
+3. Type `get-content debug.log -wait` and hit Enter button on your keyboard
 
 You will see what is happening with the Pirate daemon.
