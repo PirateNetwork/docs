@@ -20,4 +20,4 @@ z_importkey secret-extended-key-main1qw3hr79rqgqqpqyh5dyplsjzm2cg8crykwpjr5j2pc0
 ```
 ![Image Example](https://github.com/PirateNetwork/docs/blob/master/images/Agama-Settings-CLI-import-privkey.png)
 
-#### This will not return any output and should trigger rescan automatically in the background. You should be able to see the address in Agama receive tab after the rescan is done. You can keep an eye on the debug.log for live progress. 
+#### This will not return any output and should trigger rescan automatically in the background. You should be able to see the address in Agama receive tab after the rescan is done. You can [keep an eye on the debug.log](https://github.com/PirateNetwork/docs/blob/master/how-to-check-pirate-debug-log-file.md) for live progress. 
