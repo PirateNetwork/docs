@@ -2,6 +2,7 @@
 It is very important that your understand each of the steps and follow accordingly.
 
 1. Export privkey of the Sapling `zs` address(es) that has the funds by clicking on 3 dots and select **copy priv key (WIF)**
+![copy private key of any address](https://github.com/PirateNetwork/docs/blob/master/images/Agama-copy-priv-key-wif.png)
 2. Stop PIrate wallet 
 3. Backup wallet.dat file somewhere safe
 4. Delete wallet.dat file
