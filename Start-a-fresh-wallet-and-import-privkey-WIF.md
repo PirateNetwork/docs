@@ -7,8 +7,10 @@ It is very important that your understand each of the steps and follow according
 4. delete wallet.dat file
 5. start Pirate in native mode (this will create new wallet.dat without any existing addresses)
 6. import sapling priv key using Agama Settings > CLI section
-- Select PIRATE as native daemon and use your privkey with `z_importkey` param like below
+- Select **PIRATE (native)** daemon and use your privkey with `z_importkey` param like below
 ```
 z_importkey secret-extended-key-main1qw3hr79rqgqqpqyh5dyplsjzm2cg8crykwpjr5j2pc0kle7tqkqanks33ar4nupcuxr0wvp58hzpazclgw2sg2e677augzdjmqj0supayuzuqmk3z5qqwgzmmygzh6up6alstzqneunwmdgnj5tanasqhxy7v620hnvw3fsdmmtnaysua6xdgmxg42j4xhjglqyp68yf76tceun767kw2x86ngfd4kdy559gu5gcz37uud84et4ppakrxl7he3ua4jg3kxz5tzfvjtswxgkgw
 ```
+![Image Example](https://github.com/PirateNetwork/docs/blob/master/images/Agama-Settings-CLI-import-privkey.png)
 
+#### This will not return any output and should trigger rescan automatically in the background. You should be able to see the address in Agama receive tab after the rescan is done. You can keep an eye on the debug.log for live progress. 
