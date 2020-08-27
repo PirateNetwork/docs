@@ -1,3 +1,4 @@
+To make it even easier for you to operate the Pirate Chain wallets, we have created a new easy wallet installation script. This works for Pirate wallets (Windows) and offers: 
 How To Use The Script:
 
 -Download Wget64.exe
@@ -13,7 +14,6 @@ What The Script Does:
 -Bootstrap extract
 -Zcash parameters installation
 -Auto-launch of wallet
-
 
 
 Video Tutorial https://www.youtube.com/watch?v=H0XtWv4Zohk
