@@ -28,7 +28,6 @@ move "sapling-output.params" "%appdata%\ZcashParams\"
 move "sprout-groth16.params" "%appdata%\ZcashParams\"
 del sprout-proving.key
 
-
 echo DOWNLOADING PIRATEOCEAN
 wget64.exe -N https://github.com/PirateNetwork/PirateOcean/releases/download/release_113fbc7/pirate113fbc7_win.zip
 
