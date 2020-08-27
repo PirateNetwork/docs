@@ -1,12 +1,11 @@
-To make it even easier for you to operate the Pirate Chain wallets, we have created a new easy wallet installation script. This works for Pirate wallets (Windows) and offers: 
-
+To make it even easier for you to operate the Pirate Chain wallets, we have created a new easy wallet installation script.
+This works for Pirate wallets (Windows) and offers: 
 
 - Fast block syncing
 - Bootstrap downloading
 - Bootstrap extract
 - Zcash parameters installation
 - Auto-launch of wallet
-
 
 How To Use The Script:
 
