@@ -45,5 +45,3 @@ echo EXTRACTING SEVENSEAS
 echo RUNNING SEVENSEAS
 start sevenseas.exe
 del sevenseas-win-0.8.2.zip
-
-
