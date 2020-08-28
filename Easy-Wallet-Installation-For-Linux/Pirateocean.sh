@@ -9,9 +9,6 @@
 
 ###cd ~ #cd to home for wget & unzip
 
-echo Installing Pirateocean package
-sudo apt-get install libminiupnpc17
-
 echo Creating /.komodo/PIRATE Folder
 mkdir -p /home/$USER/.komodo/PIRATE && chmod 755 /home/$USER/.komodo/PIRATE
 echo Installing DOWNLOAD BOOTSRAPS
