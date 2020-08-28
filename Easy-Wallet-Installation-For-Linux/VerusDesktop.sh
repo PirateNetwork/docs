@@ -44,6 +44,6 @@ echo Downloading Verus Desktop
 wget -N https://github.com/VerusCoin/Verus-Desktop/releases/download/v0.7.1-5/Verus-Desktop-Linux-v0.7.1-5-x86_64.tgz
 tar -xzvf Verus-Desktop-Linux-v0.7.1-5-x86_64.tgz
 
-echo Verus Desktop Wallet
+echo Launching Verus Desktop Wallet
 chmod 777 Verus-Desktop-v0.7.1-5-x86_64.AppImage
 ./Verus-Desktop-v0.7.1-5-x86_64.AppImage
