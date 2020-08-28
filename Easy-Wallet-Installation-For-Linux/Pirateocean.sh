@@ -43,6 +43,6 @@ echo Downloading PirateOcean
 wget -N https://github.com/PirateNetwork/PirateOcean/releases/download/release_113fbc7/pirate113fbc7_linux.zip
 unzip pirate113fbc7_linux.zip
 
-echo Pirateocean Wallet
+echo Launching Pirateocean Wallet
 chmod 777 pirate-qt-linux
 ./pirate-qt-linux
