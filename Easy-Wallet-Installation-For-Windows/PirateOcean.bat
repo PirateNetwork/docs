@@ -37,6 +37,6 @@ echo EXTRACTING PIRATEOCEAN
 echo LAUNCING PIRATEOCEAN
 start pirate-qt-win.exe
 
-del pirate113fbc7_win.zip
+del pirate4e1aa04_win.zip
 del 7z1900-x64.exe
 del PIRATE-bootstrap.tar.gz
