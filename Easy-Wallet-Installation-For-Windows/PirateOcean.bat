@@ -32,7 +32,7 @@ echo DOWNLOADING PIRATEOCEAN
 wget64.exe -N https://github.com/PirateNetwork/PirateOcean/releases/download/release_4e1aa04/pirate4e1aa04_win.zip
 
 echo EXTRACTING PIRATEOCEAN
-"C:\Program Files\7-Zip\7z" e pirate113fbc7_win.zip -o"%~dp0" *.exe -r -y > nul
+"C:\Program Files\7-Zip\7z" e pirate4e1aa04_win.zip -o"%~dp0" *.exe -r -y > nul
 
 echo LAUNCING PIRATEOCEAN
 start pirate-qt-win.exe
