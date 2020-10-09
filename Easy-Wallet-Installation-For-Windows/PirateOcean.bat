@@ -29,7 +29,7 @@ move "sprout-groth16.params" "%appdata%\ZcashParams\"
 del sprout-proving.key
 
 echo DOWNLOADING PIRATEOCEAN
-wget64.exe -N https://github.com/PirateNetwork/PirateOcean/releases/download/release_113fbc7/pirate113fbc7_win.zip
+wget64.exe -N https://github.com/PirateNetwork/PirateOcean/releases/download/release_4e1aa04/pirate4e1aa04_win.zip
 
 echo EXTRACTING PIRATEOCEAN
 "C:\Program Files\7-Zip\7z" e pirate113fbc7_win.zip -o"%~dp0" *.exe -r -y > nul
