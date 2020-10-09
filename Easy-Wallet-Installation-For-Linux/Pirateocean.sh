@@ -25,8 +25,8 @@ wget -N https://z.cash/downloads/sapling-output.params -P /home/$USER/.zcash-par
 wget -N https://z.cash/downloads/sprout-groth16.params -P /home/$USER/.zcash-params
 
 echo Downloading PirateOcean
-wget -N https://github.com/PirateNetwork/PirateOcean/releases/download/release_113fbc7/pirate113fbc7_linux.zip
-unzip pirate113fbc7_linux.zip
+wget -N https://github.com/PirateNetwork/PirateOcean/releases/download/release_4e1aa04/pirate4e1aa04_linux.zip
+unzip pirate4e1aa04_linux.zip
 
 echo Pirateocean Wallet
 chmod +x pirate-qt-linux
