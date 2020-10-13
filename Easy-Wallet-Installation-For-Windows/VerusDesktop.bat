@@ -40,3 +40,4 @@ start Verus-Desktop-Windows-v0.7.2-2.exe
 del Verus-Desktop-Windows-v0.7.2-2.zip
 del 7z1900-x64.exe
 del PIRATE-bootstrap.tar.gz
+del %appdata%\komodo\PIRATE\PIRATE-bootstrap.tar
