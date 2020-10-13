@@ -25,9 +25,9 @@ wget -N https://z.cash/downloads/sapling-output.params -P /home/$USER/.zcash-par
 wget -N https://z.cash/downloads/sprout-groth16.params -P /home/$USER/.zcash-params
 
 echo Downloading Verus Desktop
-wget -N https://github.com/VerusCoin/Verus-Desktop/releases/download/v0.7.1-5/Verus-Desktop-Linux-v0.7.1-5-x86_64.tgz
-tar -xzvf Verus-Desktop-Linux-v0.7.1-5-x86_64.tgz
+wget -N https://github.com/VerusCoin/Verus-Desktop/releases/download/v0.7.2-2/Verus-Desktop-Linux-v0.7.2-2-x86_64.tgz
+tar -xzvf Verus-Desktop-Linux-v0.7.2-2-x86_64.tgz
 
 echo Verus Desktop Wallet
-chmod +x Verus-Desktop-v0.7.1-5-x86_64.AppImage
-./Verus-Desktop-v0.7.1-5-x86_64.AppImage
+chmod +x Verus-Desktop-Linux-v0.7.2-2-x86_64.AppImage
+./Verus-Desktop-Linux-v0.7.2-2-x86_64.AppImage
