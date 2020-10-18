@@ -4,7 +4,6 @@ How To Use The Script:
 -Permit The Script
 -Execute The Script (ex. Sevenseas.sh)
 
-
 What The Script Does:
 
 -Wallet Downloading
