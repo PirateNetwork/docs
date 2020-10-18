@@ -7,7 +7,7 @@ How To Use The Script:
 
 What The Script Does:
 
--Fast block syncing, 
+-Fast block syncing,
 -Bootstrap downloading
 -Bootstrap extract (removes old blocks & Chainstate folders and replaces with new fresh blocks files)
 -Bootstrap installation (7-zip)
