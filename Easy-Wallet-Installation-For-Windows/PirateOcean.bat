@@ -29,14 +29,14 @@ move "sprout-groth16.params" "%appdata%\ZcashParams\"
 del sprout-proving.key
 
 echo DOWNLOADING PIRATEOCEAN
-wget64.exe -N https://github.com/PirateNetwork/PirateOcean/releases/download/release_4e1aa04/pirate4e1aa04_win.zip
+wget64.exe -N https://github.com/PirateNetwork/PirateOcean/releases/download/release_df8e111/piratedf8e111_win.zip
 
 echo EXTRACTING PIRATEOCEAN
-"C:\Program Files\7-Zip\7z" e pirate4e1aa04_win.zip -o"%~dp0" *.exe -r -y > nul
+"C:\Program Files\7-Zip\7z" e piratedf8e111_win.zip -o"%~dp0" *.exe -r -y > nul
 
 echo LAUNCING PIRATEOCEAN
 start pirate-qt-win.exe
 
-del pirate4e1aa04_win.zip
+del piratedf8e111_win.zip
 del 7z1900-x64.exe
 del PIRATE-bootstrap.tar.gz
