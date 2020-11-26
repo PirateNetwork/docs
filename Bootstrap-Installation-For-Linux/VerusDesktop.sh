@@ -20,8 +20,8 @@ wget -N --no-check-certificate --progress=dot:giga --continue --retry-connrefuse
 tar -xzvf /home/$USER/.komodo/PIRATE/PIRATE-bootstrap.tar.gz -C /home/$USER/.komodo/PIRATE
 
 echo Downloading Verus Desktop
-wget -N https://github.com/VerusCoin/Verus-Desktop/releases/download/v0.7.2-2/Verus-Desktop-Linux-v0.7.2-2-x86_64.tgz
-tar -xzvf Verus-Desktop-Linux-v0.7.2-2-x86_64.tgz
+wget -N https://github.com/VerusCoin/Verus-Desktop/releases/download/v0.7.2-5/Verus-Desktop-Linux-v0.7.2-5-x86_64.tgz
+tar -xzvf Verus-Desktop-Linux-v0.7.2-5-x86_64.tgz
 
 echo Verus Desktop Wallet
 chmod +x Verus-Desktop-v0.7.2-2-x86_64.AppImage
