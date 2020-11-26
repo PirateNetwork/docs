@@ -29,15 +29,14 @@ move "sprout-groth16.params" "%appdata%\ZcashParams\"
 del sprout-proving.key
 
 echo DOWNLOADING Verus Desktop
-wget64.exe -N https://github.com/VerusCoin/Verus-Desktop/releases/download/v0.7.2-2/Verus-Desktop-Windows-v0.7.2-2.zip
+wget64.exe -N https://github.com/VerusCoin/Verus-Desktop/releases/download/v0.7.2-5/Verus-Desktop-Windows-v0.7.2-5.zip
 
 echo EXTRACTING Verus Desktop
-"C:\Program Files\7-Zip\7z" e Verus-Desktop-Windows-v0.7.2-2.zip -o"%~dp0" *.exe -r -y > nul
+"C:\Program Files\7-Zip\7z" e Verus-Desktop-Windows-v0.7.2-5.zip -o"%~dp0" *.exe -r -y > nul
 
 echo Launching Verus Desktop Wallet
-start Verus-Desktop-Windows-v0.7.2-2.exe
+start Verus-Desktop-v0.7.2-5.exe
 
-del Verus-Desktop-Windows-v0.7.2-2.zip
+del Verus-Desktop-Windows-v0.7.2-5.zip
 del 7z1900-x64.exe
 del PIRATE-bootstrap.tar.gz
-del %appdata%\komodo\PIRATE\PIRATE-bootstrap.tar
