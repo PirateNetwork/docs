@@ -219,16 +219,22 @@ echo Creating Komodo And Pirate Folder
 cd ~/Library/Application\ Support/
 mkdir -p Komodo/PIRATE/ && chmod 755 Komodo/PIRATE/
 cd Komodo/PIRATE
+
 echo Downloading The Bootstrap File
 Curl --remote-name https://eu.bootstrap.dexstats.info/PIRATE-bootstrap.tar.gz
+
 echo Extracting the Bootstrap
 tar -xvzf PIRATE-bootstrap.tar.gz
 cd ~/Desktop
+
 echo Downloading Pirate Ocean Wallet
 curl --remote-name https://github.com/PirateNetwork/PirateOcean/releases/download/release_df8e111/piratedf8e111_mac.zip
+
 echo Extracting Pirate Ocean Wallet
 tar -xvzf piratedf8e111_mac.zip
+
 echo Mounting Pirate Ocean
 hdiutil attach Verus-Desktop-v0.7.2-6.dmg
-Launching Pirate Ocean
+
+echo Launching Pirate Ocean
 ./pirate-qt-mac
