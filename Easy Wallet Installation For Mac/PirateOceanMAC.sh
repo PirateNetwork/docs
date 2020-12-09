@@ -225,13 +225,19 @@ Curl --remote-name https://eu.bootstrap.dexstats.info/PIRATE-bootstrap.tar.gz
 
 echo Extracting the Bootstrap
 tar -xvzf PIRATE-bootstrap.tar.gz
+
 cd ~/Desktop
+echo Downloading PirateWallet
+curl -L -O https://github.com/kaks25/test2/releases/download/test3/PirateWallet-v3.0.0.dmg
 
-echo Downloading Pirate Ocean Wallet
-curl -L -O https://github.com/PirateNetwork/PirateOcean/releases/download/release_df8e111/piratedf8e111_mac.zip
+echo Mounting PirateWallet
+hdiutil attach PirateWallet-v3.0.0.dmg
 
-echo Extracting Pirate Ocean Wallet
-tar -xvzf piratedf8e111_mac.zip
 
-echo Launching Pirate Ocean
-./pirate-qt-mac
+echo Copying PirateWallet To Applications folder
+cd /Volumes/PirateWallet-v3.0.0
+cp -rf PirateWallet.app /Applications
+
+sleep 10s
+echo Launching PirateWallet
+open -a PirateWallet
