@@ -16,11 +16,11 @@ echo EXTRACTING BOOTSTRAP
 "C:\Program Files\7-Zip\7z" x "%appdata%\komodo\PIRATE\PIRATE-bootstrap.tar" -o"%appdata%\komodo\PIRATE\"
 
 echo Downloading Zcash parameters
-    wget64.exe -N https://z.cash/downloads/sprout-proving.key
-    wget64.exe -N https://z.cash/downloads/sprout-verifying.key
-    wget64.exe -N https://z.cash/downloads/sapling-spend.params
-    wget64.exe -N https://z.cash/downloads/sapling-output.params
-    wget64.exe -N https://z.cash/downloads/sprout-groth16.params
+    wget64.exe -N https://download.z.cash/downloads//sprout-proving.key
+    wget64.exe -N https://download.z.cash/downloads//sprout-verifying.key
+    wget64.exe -N https://download.z.cash/downloads//sapling-spend.params
+    wget64.exe -N https://download.z.cash/downloads//sapling-output.params
+    wget64.exe -N https://download.z.cash/downloads//sprout-groth16.params
 
 echo Moving files to %appdata%\ZcashParams
 xcopy "sprout-proving.key" "%appdata%\ZcashParams\"
@@ -30,18 +30,12 @@ move "sapling-output.params" "%appdata%\ZcashParams\"
 move "sprout-groth16.params" "%appdata%\ZcashParams\"
 del sprout-proving.key
 
-echo Installing Bootstrap + Running Wallet
-@echo off
-echo Removing OLD BLOCKS AND CHAINSTATE FOLDERS
-rd /s /q %appdata%\komodo\PIRATE\blocks
-rd /s /q %appdata%\komodo\PIRATE\chainstate
-
 echo DOWNLOADING SEVENSEAS
 wget64.exe -N https://github.com/PirateNetwork/SevenSeas/releases/download/0.8.2/sevenseas-win-0.8.2.zip
 
 echo EXTRACTING SEVENSEAS
 "C:\Program Files\7-Zip\7z" e sevenseas-win-0.8.2.zip -o"%~dp0" *.exe -r -y > nul
 
-echo RUNNING SEVENSEAS
+echo Launching SEVENSEAS
 start sevenseas.exe
 del sevenseas-win-0.8.2.zip
