@@ -210,14 +210,19 @@ echo Creating Komodo And Pirate Folder
 cd ~/Library/Application\ Support/
 mkdir -p Komodo/PIRATE/ && chmod 755 Komodo/PIRATE/
 cd Komodo/PIRATE
+
 echo Downloading The Bootstrap FIle
 Curl --remote-name https://eu.bootstrap.dexstats.info/PIRATE-bootstrap.tar.gz
+
 echo Extracting the Bootstrap
 tar -xvzf PIRATE-bootstrap.tar.gz
 cd ~/Desktop
+
 echo Downloading Sevenseas Wallet
 Curl -L -O https://github.com/PirateNetwork/SevenSeas/releases/download/0.8.2/macOS-sevenseas-v0.8.2.dmg
+
 echo Mounting Sevenseas Wallet
 hdiutil attach macOS-sevenseas-v0.8.2.dmg
-Launching Sevenseas 
+
+echoLaunching Sevenseas 
 Open -a Sevenseas
