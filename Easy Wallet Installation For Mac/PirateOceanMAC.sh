@@ -5,7 +5,6 @@ xcode-select --install
 Echo Install gcc8
 brew install gcc@8
 
-
 echo Downloading Zcash Parameters
 #!/bin/bash
 
