@@ -4,7 +4,7 @@ xcode-select --install
 echo Installing Python3
 brew install python3
 
-
+echo Downloading Zcash Parameters
 #!/bin/bash
 
 set -eu
