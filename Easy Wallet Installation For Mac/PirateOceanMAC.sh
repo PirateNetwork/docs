@@ -1,5 +1,8 @@
+Echo Install Xcode
 xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+Echo Install gcc8
 brew install gcc@8
 
 
