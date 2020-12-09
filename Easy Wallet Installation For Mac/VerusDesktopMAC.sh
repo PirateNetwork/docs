@@ -1,5 +1,7 @@
+echo Install Xcode
 xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+echo Installing Python3
 brew install python3
 
 
@@ -212,15 +214,30 @@ EOF
 main
 rm -f /tmp/fetch_params.lock
 
+echo Creating Komodo And Pirate Folder
 cd ~/Library/Application\ Support/
 mkdir -p Komodo/PIRATE/ && chmod 755 Komodo/PIRATE/
 cd Komodo/PIRATE
+
+echo Downloading The Bootstrap File
 Curl --remote-name https://eu.bootstrap.dexstats.info/PIRATE-bootstrap.tar.gz
+
+echo Extracting the Bootstrap
 tar -xvzf PIRATE-bootstrap.tar.gz
 cd ~/Desktop
+
+echo downloading VerusDesktop
 Curl -L -O https://github.com/VerusCoin/Verus-Desktop/releases/download/v0.7.2-6/Verus-Desktop-MacOS-v0.7.2-6.tgz
+
+echo Extracting VerusDesktop
 tar -xvzf Verus-Desktop-MacOS-v0.7.2-6.tgz
+
+Mounting VerusDesktop
 hdiutil attach Verus-Desktop-v0.7.2-6.dmg
 cd /Volumes/Verus-Desktop\ 0.7.2-6
+
+echo Copying VerusDesktop To Applications folder
 cp -rf Verus-Desktop.app /Applications
+
+echo Opening VerusDesktop
 open -a Verus-Desktop
