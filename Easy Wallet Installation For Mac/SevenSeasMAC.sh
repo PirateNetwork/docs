@@ -224,5 +224,5 @@ Curl -L -O https://github.com/PirateNetwork/SevenSeas/releases/download/0.8.2/ma
 echo Mounting Sevenseas Wallet
 hdiutil attach macOS-sevenseas-v0.8.2.dmg
 
-echoLaunching Sevenseas 
+echo Launching Sevenseas 
 Open -a Sevenseas
