@@ -18,16 +18,16 @@ rm ~/.komodo/PIRATE/PIRATE-bootstrap.tar.gz
 
 echo Downloading and extracting Zcash parameters
 mkdir -p /home/$USER/.zcash-params/ && chmod 755 /home/$USER/.zcash-params/
-wget -N https://z.cash/downloads/sprout-proving.key -P /home/$USER/.zcash-params
-wget -N  https://z.cash/downloads/sprout-verifying.key -P /home/$USER/.zcash-params
-wget -N https://z.cash/downloads/sapling-spend.params -P /home/$USER/.zcash-params
-wget -N https://z.cash/downloads/sapling-output.params -P /home/$USER/.zcash-params
-wget -N https://z.cash/downloads/sprout-groth16.params -P /home/$USER/.zcash-params
+wget -N https://download.z.cash/downloads//sprout-proving.key -P /home/$USER/.zcash-params
+wget -N https://download.z.cash/downloads//sprout-verifying.key -P /home/$USER/.zcash-params
+wget -N https://download.z.cash/downloads//sapling-spend.params -P /home/$USER/.zcash-params
+wget -N https://download.z.cash/downloads//sapling-output.params -P /home/$USER/.zcash-params
+wget -N https://download.z.cash/downloads//sprout-groth16.params -P /home/$USER/.zcash-params
 
 echo Downloading Verus Desktop
-wget -N https://github.com/VerusCoin/Verus-Desktop/releases/download/v0.7.2-5/Verus-Desktop-Linux-v0.7.2-5-x86_64.tgz
-tar -xzvf Verus-Desktop-Linux-v0.7.2-5-x86_64.tgz
+wget -N https://github.com/VerusCoin/Verus-Desktop/releases/download/v0.7.2-6/Verus-Desktop-Linux-v0.7.2-6-x86_64.tgz
+tar -xzvf Verus-Desktop-Linux-v0.7.2-6-x86_64.tgz
 
 echo Verus Desktop Wallet
-chmod +x Verus-Desktop-Linux-v0.7.2-5-x86_64.AppImage
-./Verus-Desktop-Linux-v0.7.2-5-x86_64.AppImage
+chmod +x Verus-Desktop-Linux-v0.7.2-6-x86_64.AppImage
+./Verus-Desktop-Linux-v0.7.2-6-x86_64.AppImage
