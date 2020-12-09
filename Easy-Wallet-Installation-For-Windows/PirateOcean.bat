@@ -14,11 +14,11 @@ echo EXTRACTING BOOTSTRAP
 "C:\Program Files\7-Zip\7z" x "%appdata%\komodo\PIRATE\PIRATE-bootstrap.tar" -o"%appdata%\komodo\PIRATE\"
 
 echo Downloading Zcash parameters
-    wget64.exe -N https://z.cash/downloads/sprout-proving.key
-    wget64.exe -N https://z.cash/downloads/sprout-verifying.key
-    wget64.exe -N https://z.cash/downloads/sapling-spend.params
-    wget64.exe -N https://z.cash/downloads/sapling-output.params
-    wget64.exe -N https://z.cash/downloads/sprout-groth16.params
+    wget64.exe -N https://download.z.cash/downloads//sprout-proving.key
+    wget64.exe -N https://download.z.cash/downloads//sprout-verifying.key
+    wget64.exe -N https://download.z.cash/downloads//sapling-spend.params
+    wget64.exe -N https://download.z.cash/downloads//sapling-output.params
+    wget64.exe -N https://download.z.cash/downloads//sprout-groth16.params
 
 echo Moving files to %appdata%\ZcashParams
 xcopy "sprout-proving.key" "%appdata%\ZcashParams\"
