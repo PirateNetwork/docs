@@ -18,11 +18,11 @@ rm ~/.komodo/PIRATE/PIRATE-bootstrap.tar.gz
 
 echo Downloading and extracting Zcash parameters
 mkdir -p /home/$USER/.zcash-params/ && chmod 755 /home/$USER/.zcash-params/
-wget -N https://z.cash/downloads/sprout-proving.key -P /home/$USER/.zcash-params
-wget -N https://z.cash/downloads/sprout-verifying.key -P /home/$USER/.zcash-params
-wget -N https://z.cash/downloads/sapling-spend.params -P /home/$USER/.zcash-params
-wget -N https://z.cash/downloads/sapling-output.params -P /home/$USER/.zcash-params
-wget -N https://z.cash/downloads/sprout-groth16.params -P /home/$USER/.zcash-params
+wget -N https://download.z.cash/downloads//sprout-proving.key -P /home/$USER/.zcash-params
+wget -N https://download.z.cash/downloads//sprout-verifying.key -P /home/$USER/.zcash-params
+wget -N https://download.z.cash/downloads//sapling-spend.params -P /home/$USER/.zcash-params
+wget -N https://download.z.cash/downloads//sapling-output.params -P /home/$USER/.zcash-params
+wget -N https://download.z.cash/downloads//sprout-groth16.params -P /home/$USER/.zcash-params
 
 echo Downloading PirateOcean
 wget -N https://github.com/PirateNetwork/PirateOcean/releases/download/release_df8e111/piratedf8e111_linux.zip
