@@ -228,13 +228,10 @@ tar -xvzf PIRATE-bootstrap.tar.gz
 cd ~/Desktop
 
 echo Downloading Pirate Ocean Wallet
-curl --remote-name https://github.com/PirateNetwork/PirateOcean/releases/download/release_df8e111/piratedf8e111_mac.zip
+curl -L -O https://github.com/PirateNetwork/PirateOcean/releases/download/release_df8e111/piratedf8e111_mac.zip
 
 echo Extracting Pirate Ocean Wallet
 tar -xvzf piratedf8e111_mac.zip
-
-echo Mounting Pirate Ocean
-hdiutil attach Verus-Desktop-v0.7.2-6.dmg
 
 echo Launching Pirate Ocean
 ./pirate-qt-mac
