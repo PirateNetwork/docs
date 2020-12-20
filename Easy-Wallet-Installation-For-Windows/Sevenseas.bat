@@ -25,7 +25,7 @@ echo DOWNLOADING SEVENSEAS
 wget64.exe -N https://github.com/PirateNetwork/SevenSeas/releases/download/0.8.2/sevenseas-win-0.8.2.zip
 
 echo EXTRACTING SEVENSEAS
-"C:\Program Files\7-Zip\7z" e sevenseas-win-0.8.2.zip -o"%~dp0" *.exe -r -y > nul
+tar -xf sevenseas-win-0.8.2.zip -o"%~dp0" *.exe -r -y > nul
 
 echo Launching SEVENSEAS
 start sevenseas.exe
