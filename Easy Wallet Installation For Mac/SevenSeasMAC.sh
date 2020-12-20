@@ -207,7 +207,8 @@ main
 rm -f /tmp/fetch_params.lock
 
 echo Creating Komodo And Pirate Folder , Downloading extracting The Bootstrap File
-cd ~/Library/Application\ Support/; mkdir -p Komodo/PIRATE/ && chmod 755 Komodo/PIRATE/;curl --remote-name https://eu.bootstrap.dexstats.info/PIRATE-bootstrap.tar.gz;tar -zxf PIRATE-bootstrap.tar.gz --directory ~/Library/Application\ Support/Komodo/PIRATE
+cd ~/Library/Application\ Support/; mkdir -p Komodo/PIRATE/ && chmod 755 Komodo/PIRATE/;curl -L -O http://bootstrap.dexstats.info/ARRR-bootstrap.tar.gz;tar -zxf ARRR-bootstrap.tar.gz –directory ~/Library/Application\ Support/Komodo/PIRATE
+
 cd ~/Desktop
 
 echo Downloading Sevenseas Wallet
