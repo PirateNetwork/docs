@@ -21,10 +21,10 @@ tar -zxf ARRR-bootstrap.tar.gz --directory %appdata%\komodo\PIRATE
 cd %USERPROFILE%\Desktop
 
 echo DOWNLOADING Verus Desktop
-wget64.exe -N https://github.com/VerusCoin/Verus-Desktop/releases/download/v0.7.2-6/Verus-Desktop-Windows-v0.7.2-6.zip
+curl -L -O https://github.com/VerusCoin/Verus-Desktop/releases/download/v0.7.2-6/Verus-Desktop-Windows-v0.7.2-6.zip
 
 echo EXTRACTING Verus Desktop
-"C:\Program Files\7-Zip\7z" e Verus-Desktop-Windows-v0.7.2-6.zip -o"%~dp0" *.exe -r -y > nul
+tar -xf Verus-Desktop-Windows-v0.7.2-6.zip *.exe
 
 echo Launching Verus Desktop Wallet
 start Verus-Desktop-v0.7.2-6.exe
