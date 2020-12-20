@@ -1,42 +1,27 @@
-@echo off
-
-echo DOWNLOADING Z-ZIP
-wget64.exe -N https://www.7-zip.org/a/7z1900-x64.exe
-
-echo INSTALLING 7-ZIP
-7z1900-x64.exe /S
+echo CREATING KOMODO AND PIRATE FOLDERS
+mkdir %appdata%\komodo\PIRATE
 
 echo DOWNLOADING BOOTSTRAP
-wget64.exe -N https://eu.bootstrap.dexstats.info/PIRATE-bootstrap.tar.gz
+curl -L -O http://bootstrap.dexstats.info/ARRR-bootstrap.tar.gz
 
 echo EXTRACTING BOOTSTRAP
-"C:\Program Files\7-Zip\7z" e "PIRATE-bootstrap.tar.gz" -o"%appdata%\komodo\PIRATE\"
-"C:\Program Files\7-Zip\7z" x "%appdata%\komodo\PIRATE\PIRATE-bootstrap.tar" -o"%appdata%\komodo\PIRATE\"
+tar -zxf ARRR-bootstrap.tar.gz --directory %appdata%\komodo\PIRATE
 
 echo Downloading Zcash parameters
-    wget64.exe -N https://download.z.cash/downloads//sprout-proving.key
-    wget64.exe -N https://download.z.cash/downloads//sprout-verifying.key
-    wget64.exe -N https://download.z.cash/downloads//sapling-spend.params
-    wget64.exe -N https://download.z.cash/downloads//sapling-output.params
-    wget64.exe -N https://download.z.cash/downloads//sprout-groth16.params
 
-echo Moving files to %appdata%\ZcashParams
-xcopy "sprout-proving.key" "%appdata%\ZcashParams\"
-move "sprout-verifying.key" "%appdata%\ZcashParams\"
-move "sapling-spend.params" "%appdata%\ZcashParams\"
-move "sapling-output.params" "%appdata%\ZcashParams\"
-move "sprout-groth16.params" "%appdata%\ZcashParams\"
-del sprout-proving.key
+curl -L -O https://download.z.cash/downloads//sapling-output.params 
+curl -L -O https://download.z.cash/downloads//sprout-groth16.params 
+curl -L -O https://download.z.cash/downloads//sprout-proving.key 
+curl -L -O https://download.z.cash/downloads//sprout-verifying.key 
+curl -L -O https://download.z.cash/downloads//sapling-spend.params
+
+cd %USERPROFILE%\Desktop
 
 echo DOWNLOADING PIRATEOCEAN
-wget64.exe -N https://github.com/PirateNetwork/PirateOcean/releases/download/release_df8e111/piratedf8e111_win.zip
+curl -L -O https://github.com/PirateNetwork/pirate/releases/download/v3.1.0/pirate-qt-windows-v3.1.0.zip
 
 echo EXTRACTING PIRATEOCEAN
-"C:\Program Files\7-Zip\7z" e piratedf8e111_win.zip -o"%~dp0" *.exe -r -y > nul
+tar -xf pirate-qt-windows-v3.1.0.zip *.exe
 
 echo LAUNCING PIRATEOCEAN
 start pirate-qt-win.exe
-
-del piratedf8e111_win.zip
-del 7z1900-x64.exe
-del PIRATE-bootstrap.tar.gz
