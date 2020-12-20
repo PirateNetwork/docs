@@ -11,10 +11,9 @@
 
 echo Creating /.komodo/PIRATE Folder
 mkdir -p /home/$USER/.komodo/PIRATE && chmod 755 /home/$USER/.komodo/PIRATE
+
 echo Installing DOWNLOAD BOOTSRAPS
-wget -N --no-check-certificate --progress=dot:giga --continue --retry-connrefused --waitretry=3 --timeout=30 https://eu.bootstrap.dexstats.info/PIRATE-bootstrap.tar.gz -P /home/$USER/.komodo/PIRATE
-tar -xzvf /home/$USER/.komodo/PIRATE/PIRATE-bootstrap.tar.gz -C /home/$USER/.komodo/PIRATE
-rm ~/.komodo/PIRATE/PIRATE-bootstrap.tar.gz
+wget -N –no-check-certificate –progress=dot:giga –continue –retry-connrefused –waitretry=3 –timeout=30 http://bootstrap.dexstats.info/ARRR-bootstrap.tar.gz -P /home/$USER/.komodo/PIRATE;tar -xzvf /home/$USER/.komodo/PIRATE/ARRR-bootstrap.tar.gz -C /home/$USER/.komodo/PIRATE
 
 echo Downloading and extracting Zcash parameters
 mkdir -p /home/$USER/.zcash-params/ && chmod 755 /home/$USER/.zcash-params/
