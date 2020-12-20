@@ -209,19 +209,19 @@ main
 rm -f /tmp/fetch_params.lock
 
 echo Creating Komodo And Pirate Folder , Downloading The BootstraP
-cd ~/Library/Application\ Support/; mkdir -p Komodo/PIRATE/ && chmod 755 Komodo/PIRATE/;curl --remote-name https://eu.bootstrap.dexstats.info/PIRATE-bootstrap.tar.gz;tar -zxf PIRATE-bootstrap.tar.gz --directory ~/Library/Application\ Support/Komodo/PIRATE
+cd ~/Library/Application\ Support/; mkdir -p Komodo/PIRATE/ && chmod 755 Komodo/PIRATE/;curl -L -O http://bootstrap.dexstats.info/ARRR-bootstrap.tar.gz;tar -zxf ARRR-bootstrap.tar.gz –directory ~/Library/Application\ Support/Komodo/PIRATE
 
 cd ~/Desktop
 echo Downloading PirateWallet
-curl -L -O https://github.com/kaks25/test2/releases/download/test3/PirateWallet-v3.0.0.dmg
+curl -L -O https://github.com/PirateNetwork/pirate/releases/download/v3.1.0/pirate-qt-MacOS-v3.1.0.dmg
 
 echo Mounting PirateWallet
-hdiutil attach PirateWallet-v3.0.0.dmg
+hdiutil attach pirate-qt-MacOS-v3.1.0.dmg
 
 echo Copying PirateWallet To Applications folder
 cd /Volumes/PirateWallet-v3.0.0
 cp -rf PirateWallet.app /Applications
 
-sleep 10s
+sleep 5s
 echo Launching PirateWallet
 open -a PirateWallet
