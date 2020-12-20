@@ -1,9 +1,3 @@
-echo Install Xcode
-xcode-select --install
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-echo Installing Python3
-brew install python3
-
 echo Downloading Zcash Parameters
 #!/bin/bash
 
