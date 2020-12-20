@@ -15,6 +15,8 @@ curl -L -O https://download.z.cash/downloads//sprout-proving.key
 curl -L -O https://download.z.cash/downloads//sprout-verifying.key 
 curl -L -O https://download.z.cash/downloads//sapling-spend.params
 
+cd %USERPROFILE%\Desktop
+
 echo DOWNLOADING SEVENSEAS
 wget64.exe -N https://github.com/PirateNetwork/SevenSeas/releases/download/0.8.2/sevenseas-win-0.8.2.zip
 
