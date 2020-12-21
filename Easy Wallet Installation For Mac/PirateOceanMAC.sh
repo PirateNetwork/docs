@@ -15,6 +15,7 @@ hdiutil attach pirate-qt-MacOS-v3.1.0.dmg
 
 echo Copying PirateWallet To Applications folder
 
+cd /Volumes/PirateWallet-v3.0.0
 cp -rf PirateWallet.app /Applications
 
 sleep 5s
